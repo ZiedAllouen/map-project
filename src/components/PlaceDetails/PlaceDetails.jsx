@@ -1,10 +1,12 @@
 import React from 'react' ;
- const PlaceDetails = ()=> {
+ const PlaceDetails = ({place})=> {
      return (
          <div>
              <h1>
-                 PlaceDeatils !
+                 {place.name}
+              
              </h1>
+             
          </div>
      )
  }
