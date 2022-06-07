@@ -25,7 +25,7 @@ axios.request(options).then(function (response) {
 
 const getPlacesData  = async ()=> {
 try { 
-    const response = await axios.get(url,options);
+    const {data:{data}}= await axios.get(url,options);
     return data;
 }
 catch (error){
@@ -33,3 +33,4 @@ console.log(error)
 }
 
 } 
+export default getPlacesData
